@@ -1,0 +1,17 @@
+{
+	"collectionName": "components_page_data_objects",
+	"info": {
+		"displayName": "DataObject",
+		"icon": "code"
+	},
+	"options": {},
+	"attributes": {
+		"backend": {
+			"type": "json"
+		},
+		"frontend": {
+			"type": "json"
+		}
+	},
+	"config": {}
+}

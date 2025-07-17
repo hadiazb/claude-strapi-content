@@ -1,0 +1,15 @@
+{
+	"collectionName": "components_page_countries",
+	"info": {
+		"displayName": "Country"
+	},
+	"options": {},
+	"attributes": {
+		"country": {
+			"type": "enumeration",
+			"required": true,
+			"enum": ["CO", "PY", "BO", "GT", "PA", "NI", "HN", "SV"]
+		}
+	},
+	"config": {}
+}

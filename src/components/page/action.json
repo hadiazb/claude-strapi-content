@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_page_actions",
+  "info": {
+    "displayName": "Object",
+    "icon": "attachment"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "text",
+      "required": true
+    },
+    "show": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "parameters": {
+      "type": "json"
+    },
+    "icon": {
+      "type": "json"
+    }
+  },
+  "config": {}
+}
