@@ -7,6 +7,7 @@ export interface PageAction extends Struct.ComponentSchema {
     icon: 'attachment';
   };
   attributes: {
+    characteristics: Schema.Attribute.JSON;
     icon: Schema.Attribute.JSON;
     label: Schema.Attribute.Text & Schema.Attribute.Required;
     name: Schema.Attribute.String & Schema.Attribute.Required;

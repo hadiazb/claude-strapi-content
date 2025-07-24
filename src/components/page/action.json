@@ -28,6 +28,9 @@
     },
     "icon": {
       "type": "json"
+    },
+    "characteristics": {
+      "type": "json"
     }
   },
   "config": {}
