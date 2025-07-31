@@ -471,7 +471,7 @@ export interface ApiAboutMeMenuAboutMeMenu extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
-    menusType: Schema.Attribute.String &
+    menuType: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
