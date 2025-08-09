@@ -2,7 +2,7 @@ name: Deploy Strapi STG
 
 on:
   push:
-    branches: [ "stg" ]
+    branches: ["stg"]
 
 jobs:
   build:
@@ -10,15 +10,15 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x, 20.x, 22.x]
+        node-version: [20.x, 22.x]
 
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-    - name: Connect and deploy to server
-      uses: appleboy/ssh-action@v0.1.10
-      with:
+      - name: Connect and deploy to server
+        uses: appleboy/ssh-action@v0.1.10
+        with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
@@ -28,4 +28,3 @@ jobs:
             git reset --hard origin/stg
             pnpm install --frozen-lockfile
             pm2 restart strapi-stg || pm2 start pnpm --name strapi-stg -- run start:stg
-
