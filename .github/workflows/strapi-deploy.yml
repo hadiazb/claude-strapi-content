@@ -30,4 +30,5 @@ jobs:
             git fetch origin stg
             git reset --hard origin/stg
             pnpm install --frozen-lockfile
+            pnpm run build:stg
             pm2 restart strapi-stg || pm2 start pnpm --name strapi-stg -- run start:stg
