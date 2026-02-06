@@ -6,6 +6,8 @@
 	"scripts": {
 		"console": "strapi console",
 		"deploy": "strapi deploy",
+		"build": "strapi build",
+		"start": "strapi start",
 		"-dev-": "-dev-",
 		"build:dev": "dotenv -e .env strapi build",
 		"serve:dev": "dotenv -e .env strapi develop",
